@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <title>Clase 9 Extra</title>
+</head>
+<body>
+    <div class="card" style="width: 18rem;">
+        <img src="img/signos.png" class="card-img-top" alt="signos">
+        <div class="card-body">
+          <h5 class="card-title">Analizador</h5>
+          <p class="card-text">Programa para analizar si un número es positivo, negativo o neutro.</p>
+          <a href="#" class="btn btn-primary" onclick="analizar()">Probar</a>
+        </div>
+    </div>
+
+    <script>
+        function analizar() {
+            var num = prompt("Ingrese un número: ");
+            if (num != null){
+                if(num > 0){
+                    alert("El número ingresado es positivo.");
+                }
+                else{
+                    if(num < 0){
+                        alert("El número ingresado es negativo.");
+                    }
+                    else{
+                        alert("El número ingresado es neutro.");
+                    }
+                }
+            }
+            else{
+                alert("No ingreso ningun número")
+            }
+        }
+    </script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <!--<script src="script.js"></script>-->
+</body>
+</html>
